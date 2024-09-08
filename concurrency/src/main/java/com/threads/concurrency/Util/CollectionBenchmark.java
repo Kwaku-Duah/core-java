@@ -1,3 +1,7 @@
+/**
+ * The `CollectionBenchmark` class compares the performance of `ConcurrentHashMap` and `HashMap` by
+ * benchmarking put, get, and remove operations.
+ */
 package com.threads.concurrency.Util;
 
 
@@ -9,6 +13,10 @@ public class CollectionBenchmark {
 
     private static final int NUM_OPERATIONS = 100000;
 
+    
+    /** 
+     * @param args
+     */
     public static void main(String[] args) {
         // Benchmark ConcurrentHashMap
         long concurrentHashMapTime = benchmarkConcurrentHashMap();

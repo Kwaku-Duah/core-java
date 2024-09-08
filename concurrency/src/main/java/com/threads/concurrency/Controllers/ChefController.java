@@ -18,6 +18,11 @@ public class ChefController {
     @Autowired
     private ChefService chefService;
 
+    
+    /** 
+     * @param chef
+     * @return ResponseEntity<String>
+     */
     // Endpoint to create a new chef
     @PostMapping
     public ResponseEntity<String> createChef(@RequestBody Chef chef) {
